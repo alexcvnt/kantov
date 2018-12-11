@@ -12,49 +12,34 @@ html {
 body {
   min-height: 100%;
   display: grid;
-  grid-template-rows: 1fr 10fr 1fr;
+  grid-template-rows: 0 10fr 0;
 }
 
 header {
-  border: 1px solid blue;
-
-  grid-row-start: 1;
-  grid-row-end: 2;
+  /* border: 1px solid blue; */
 }
 
 main {
-  border: 1px solid red;
-
-  grid-row-start: 2;
-  grid-row-end: 3;
-
+  /* border: 1px solid red; */
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
 .description {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   margin: 1vh;
-  font-size: 5vh;
-
-  grid-column-start: 1;
-  grid-column-end: 12;
+  font-size: 2em;
   align-self: center;
 }
 
 .contacts {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   margin: 1vh;
-  font-size: 3vh;
-
-  grid-column-start: 12;
-  grid-column-end: 13;
+  font-size: 1.5em;
   align-self: end;
+  text-align: end;
 }
 
 footer {
-  border: 1px solid blue;
-
-  grid-row-start: 3;
-  grid-row-end: 4;
+  /* border: 1px solid blue; */
 }
