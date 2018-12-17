@@ -6,13 +6,13 @@
 html {
   height: 100%;
   font-family: 'Roboto', sans-serif;
-  background: #fff;
+  background: white;
 }
 
 body {
   min-height: 100%;
   display: grid;
-  grid-template-rows: 0 10fr 0;
+  grid-template-rows: 0 auto 0;
 }
 
 header {
@@ -21,8 +21,9 @@ header {
 
 main {
   /* border: 1px solid red; */
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .description {
@@ -36,8 +37,7 @@ main {
   /* border: 1px solid green; */
   margin: 1vh;
   font-size: 1.5em;
-  align-self: end;
-  text-align: end;
+  align-self: flex-end;
 }
 
 footer {
