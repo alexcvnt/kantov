@@ -15,20 +15,31 @@ body {
   grid-template-rows: 0 auto 0;
 }
 
+header {
+  border: 1px solid blue;
+}
+
 main {
+  border: 1px solid red;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .description {
+  border: 1px solid green;
   margin: 1vh;
   font-size: 2em;
   align-self: center;
 }
 
 .contacts {
+  border: 1px solid green;
   margin: 1vh;
   font-size: 1.5em;
   align-self: flex-end;
+}
+
+footer {
+  border: 1px solid blue;
 }
